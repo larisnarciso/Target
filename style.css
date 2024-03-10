@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  font-family: 'Montserrat';
+  color: #b11116;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  padding: 4rem 0;
+}
+
+.banner {
+  width: 99rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+.titulo {
+  line-height: 150%;
+  font-size: 5.2rem;
+  color: #b11116;
+  font-weight: 200;
+  max-width: 40rem;
+}
+
+/*  */
+.galeria {
+  grid-column: 1/-1;
+}
+.custom-controls,
+.questoes {
+  grid-column: 1/-1;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 60px;
+}
+
+.custom-controls li {
+  opacity: 0.8;
+  transform: scale(0.8);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 2px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.custom-controls li.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/*  */
+.questoes {
+  border-radius: 1.2rem;
+  border: 0.1rem solid #b11116;
+  padding: 1rem;
+  width: 59rem;
+  max-width: 90%;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+.conteudo {
+  line-height: normal;
+  margin: 3.2rem;
+  text-align: start;
+}
+
+/* F */
+.footer {
+  background: linear-gradient(135deg, #d82125, #a71b1e);
+}
+
+.footer p {
+  color: #ffffff;
+  text-align: center;
+  padding: 30px;
+}
